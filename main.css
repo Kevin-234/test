@@ -1,0 +1,675 @@
+/* header */
+.home-header {
+  /* display flex and centerize the home title + description*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-title {
+  font-size: 2.5em;
+  /* adjust position */
+  margin: 10px;
+}
+
+.description {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90vw;
+
+  border-bottom: 1px solid lightgrey;
+
+  background-color: #fff;;
+}
+
+/* UNIQLO svg sizing and positioning */
+.logo-menu-container {
+  display: flex;
+  align-items: center;
+  /* might needs changes after input icons beside search bar */
+  margin-right: 3em;
+}
+
+.icon-wrapper {
+  /* set the wrapper beside nav menu*/
+  display: flex;
+  /* need this code for appear the svg icon */
+  align-items: flex-start;
+}
+
+.icon {
+  /* give a space to put each svg besides (row) */
+  width: 7vw;
+  padding: 0;
+}
+
+.jp-ver {
+  /* positioning */
+  max-width: 2.5vw;
+  height: 5%;
+  margin-right: 10px;
+  margin-top: 10px
+  
+}
+
+.en-ver {
+  /* positioning */
+  width: 2.5vw;
+  max-height: 5%;
+  margin-top: 10px
+}
+
+.menu {
+  display: flex;
+  text-align: center;
+  width: 30vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* li tag class */
+.nav-menu {
+  margin: 0 4px;
+  font-weight: bold;
+  color: black;
+  height: 1.5em;
+}
+
+.nav-menu:hover {
+  border-bottom: 3px solid #378694;
+}
+
+/* a tag class */
+.nav-link {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.kids {
+  width: 50px;
+}
+
+.men {
+  width: 50px;
+}
+
+/* search button */
+.srchbr-wrapper{
+  max-width: 500px;
+  min-width: 10%;
+    
+  display: flex;
+  justify-content: flex-end;
+    
+  border: 1px solid rgba(196, 196, 196, 0.767);
+}
+
+.srchbr-wrapper .input {
+  width: 190px;
+  padding: 7px 5px 7px 10px;
+  font-size: 14px;
+  /* remove input border */
+  border: none;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  line-height: 1.471;
+}
+
+/* focus delete input border line */
+.input:focus {
+  outline: none;
+}
+.searchbtn {
+  position: relative;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.searchbtn .fas{
+  width: 30px;
+  height: 17px;
+  padding: 10px 12px 9px 10px;
+}
+
+/* Icons beside search bar in nav bar */
+.fa-icons {
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.fa-heart {
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+/* MAIN */
+/* all modal button */
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-sale {
+  background-color: red;
+  border-color: red;
+}
+
+.btn-sale:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.btn-boxing {
+  border-radius: 0;
+  background-color: #000;
+}
+
+/* first wide image container*/
+.wide-img-container {
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 6em;
+  /* position relative to place the images on page (need this code for not go over the others) */
+  position: relative;
+}
+
+/* top page first wide image size */
+.wide-img {
+  height: 20vh;
+  width: 60vw;
+}
+
+/* slide show */
+.carousel{
+  margin: auto;
+  margin-top: 20px;
+  height: 50vh;
+  width: 60vw;
+}
+
+.d-block {
+  height: 50vh;
+}
+
+.carousel-indicators li {
+  width: 4px;
+}
+
+.carousel-control-prev-icon {
+  margin-right: 9em;
+  color-adjust: grey;
+  /* background-color: rgba(253, 253, 253, 0.767);
+  color:rgba(92, 92, 92, 0.767) */
+}
+
+.carousel-control-next-icon {
+  margin-left: 9em;
+}
+
+/* second wide image */
+.btn-primary {
+  padding: 0;
+}
+
+.btn-save {
+  padding: 6px 0;
+}
+
+/* sale modal close button */
+.btn-close {
+  background-color: transparent;
+  border: none;
+}
+
+/* modal list */
+.pop-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* features links */
+.feature-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  
+  width: 73em;
+  margin: auto;
+  margin-top: 3em;
+}
+
+/* feature boxes */
+.feature-links-item {
+  margin: auto;
+  margin-top: 2em;
+  border-right: 1px solid #dadada;
+}
+
+/* last feature box */
+.feature-links-edge {
+  border: none;
+}
+
+/* feature links title */
+.links-tit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family: 'Vollkorn', serif;  */
+  font-weight: 550;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/* feature links */
+.fr-links {
+  margin-right: 1em;
+  font-size: 18px;
+  font-weight: bold;
+  /* text-underline */
+  border-bottom: 1px solid black; 
+}
+
+.fr-links:hover {
+  color: rgb(48, 136, 163);
+  border-bottom: 1px solid rgb(48, 136, 163); 
+}
+
+/* GRID 4 images */
+
+.grid-title {
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.container {
+  margin-top: 5em;
+  padding: 0;
+}
+
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9, .img-10, .img-11, .img-12, .img-13, .img-14, .img-15, .img-16 {
+  height: 60vh;
+  width: 60vh;
+}
+
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9, .img-10, .img-11, .img-12, .img-13, .img-14, .img-15, .img-16 img {
+  object-fit: cover;
+}
+
+.img-13, .img-14 {
+  border: 1px solid rgb(236, 236, 236);
+}
+
+/* title of description */
+.info {
+  text-align: start;
+  font-weight: 700;
+  font-size: 15px;
+
+  margin: 10px;
+  margin-left: 0;
+
+  width: 100%;
+}
+
+.info-above-13 {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* deals ads go after four grid*/
+.deals-ads{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 60vw;
+
+  margin-bottom: 10px;
+  
+  background-color: rgb(170, 3, 3);
+}
+
+/* set up deals ads title's field */
+.tit {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* design deals ads title*/
+.deals-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  color: rgb(255, 215, 0);
+  /* why font weight is not working? TODO solve it */
+}
+
+/* WHERE: under of deals ads title */
+.deals-ads-line{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.fa-shipping-fast {
+  font-size: 2em;
+  color: rgb(255, 254, 251);
+}
+
+/* deals info */
+.deals-info {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.see-detail {
+  color: #FFF;
+}
+
+.see-detail:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+/* deals button design */
+.btn-outline-light {
+  border-radius: none;
+  height: 2.8em;
+  font-weight: 550;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: rgb(170, 3, 3);
+  font-weight: 550;
+}
+
+.btn-shop-all {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+
+  margin-bottom: 5rem;
+}
+
+.shop-all {
+  padding: 1em;
+  width: 60vw;
+  background-color: transparent;
+  border: 1px solid #000;
+
+  font-weight: 700;
+}
+
+.shop-all:hover {
+  opacity: 0.7;
+}
+
+/* card slide */
+.card-slider-tit {
+  margin-left: 11.5em;
+}
+
+.slider-wrapper {
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+
+.slider{
+  max-width: 1000px;
+  display: flex;
+  margin: 3em;
+}
+
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+  width: 15vw;
+  height: 44vh;
+}
+
+.slider .card .img{
+  height: 260px;
+  width: 100%;
+}
+
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider .card .content{
+  padding: 10px 20px;
+}
+
+.card .content .title{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.card .content p{
+  text-align: start;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+/* dear customer message */
+.dear-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+
+  background-color:rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 0;
+}
+
+.dear-user:hover {
+  background-color:rgb(0, 0, 0);
+  border: 2px solid black;
+
+}
+
+.dear-cus {
+  background-color: black;
+  width: 60vw;
+  height: 6em;
+}
+
+.dear-cus .dear {
+  color: #fff;
+  text-align: center;
+  align-self: center;
+  margin: 0;
+  margin-top: 15px;
+
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+/* UNIQLO today */
+/* title */
+.uni-today {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.today {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.today-row {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  margin: 1.3rem;
+}
+
+.today-row-in {
+  width: 100%;
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.today-tit {
+  width: 100%;
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.today-dis {
+  margin-left: 1rem;
+}
+
+/* app image */
+.app-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* information */
+.info-title {
+  margin: 0;
+  margin-top: 5rem;
+  margin-left: 21rem;
+  margin-bottom: 2rem;
+  
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 21rem;
+  margin-bottom: 2rem;
+  width: 60vw;
+}
+/* ------------------- */
+/* footer */
+/* ------------------- */
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  width: 120em;
+    
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.footer-container {
+  display: flex;
+  margin: auto;
+}
+
+.footer-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 14em;
+}
+
+.footer-header {
+  display: flex;
+  margin: .6rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.E-Newsletter {
+  justify-self: start;
+  margin: 0;
+}
+
+.E-Newsletter-p {
+  margin-top: 1rem;
+}
+
+.ftr {
+  margin-top: 0;
+}
+
+.footer-list-link {
+  margin: 10px;
+}
+
+.subscribe {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: underline;
+  margin: 0;
+  margin-bottom: 2em;
+  margin-right: 1em;
+}
+
+.footer-icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #818080;
+  color: #fff;
+  height: 35px;
+  width:35px;
+  font-size: 25px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+
+  border-top: 1px solid rgb(211, 211, 211);
+}
+
+.bootstrap-copy-link {
+  margin-left: 23em;
+}
+
+.bootstrap-link {
+  margin-right: 23em;
+}
+
+.term {
+  margin-right: 10px;
+}
